@@ -2,9 +2,9 @@ pytides
 =======
 #### Git/fork Repository info:
 
-Forked from: https://github.com/sam-cox/pytides
-This fork:  https://github.com/drf5n/pytides/ to work with python3
-Recommended fork: https://github.com/titoconte/pytides -- Titoconte is doing more current development 
+* Forked from: https://github.com/sam-cox/pytides
+* This fork:  https://github.com/drf5n/pytides/ to work with python3
+* Recommended fork: https://github.com/titoconte/pytides -- Titoconte is doing more current development 
 
  -- drf5n 2018-02-20
 
