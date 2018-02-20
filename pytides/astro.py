@@ -28,10 +28,14 @@ def d_polynomial(coefficients, argument):
 
 # Meeus formula 11.1
 def T(t):
+	"""Return the Julian Century of a datetime.  
+	Per Meeus's Astronomical Algorithms, formula 11.1"""
 	return (JD(t) - 2451545.0)/36525
 
 # Meeus formula 7.1
 def JD(t):
+	"""Return the Julian Date of a datetime.  
+	Per Meeus's Astronomical Algorithms, formula 7.1"""
 	Y, M = t.year, t.month
 	D = (
 		t.day
@@ -155,6 +159,8 @@ def _nupp(N, i, omega):
 AstronomicalParameter = namedtuple('AstronomicalParameter', ['value', 'speed'])
 
 def astro(t):
+	"""Return the astronomical parameters of a datetime.  
+	"""
 	a = {}
 	# We can use polynomial fits from Meeus to obtain good approximations to
 	# some astronomical values (and therefore speeds).
